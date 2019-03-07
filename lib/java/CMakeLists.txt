@@ -45,6 +45,7 @@ else()
     set(PRELEASE "true")
     if (CMAKE_BUILD_TYPE MATCHES DEBUG)
         set(PRELEASE "false")
+    endif ()
 
     add_custom_target(ThriftJava ALL
         COMMENT "Building Java library using Gradle Wrapper"
